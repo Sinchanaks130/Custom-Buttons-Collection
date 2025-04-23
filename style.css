@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Solid */
+.btn.solid {
+  background: #1e90ff;
+  color: white;
+}
+.btn.solid:hover {
+  background: #1c7ed6;
+}
+
+/* Outline */
+.btn.outline {
+  background: transparent;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
+}
+.btn.outline:hover {
+  background: #00bcd4;
+  color: #121212;
+}
+
+/* Gradient */
+.btn.gradient {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+.btn.gradient:hover {
+  opacity: 0.85;
+}
+
+/* Glow */
+.btn.glow {
+  background: #6a11cb;
+  color: white;
+  box-shadow: 0 0 12px #6a11cb;
+}
+.btn.glow:hover {
+  box-shadow: 0 0 20px #6a11cb, 0 0 40px #6a11cb;
+}
+
+/* Neon */
+.btn.neon {
+  background: transparent;
+  color: #39ff14;
+  border: 2px solid #39ff14;
+  text-shadow: 0 0 5px #39ff14;
+}
+.btn.neon:hover {
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
